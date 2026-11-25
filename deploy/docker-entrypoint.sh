@@ -7,9 +7,8 @@ sed -ri "s/<VirtualHost \*:80>/<VirtualHost *:${PORT_TO_USE}>/g" /etc/apache2/si
 
 if [[ -n "${DB_HOST:-}" && -n "${APP_KEY:-}" ]]; then
   php artisan migrate --force || true
-  php artisan config:cache
-  php artisan route:cache
-  php artisan view:cache
+  php artisan config:cache || true
+  php artisan view:cache || true
 fi
 
 exec apache2-foreground
