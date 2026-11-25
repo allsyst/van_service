@@ -1,0 +1,17 @@
+.gradle/
+build/
+app/build/
+local.properties
+.idea/
+*.iml
+*.apk
+.env
+.env.backup
+.env.production
+/vendor/
+/node_modules/
+/public/hot
+/storage/*.key
+/storage/logs/*.log
+/VanService_Bytehost_Upload/
+

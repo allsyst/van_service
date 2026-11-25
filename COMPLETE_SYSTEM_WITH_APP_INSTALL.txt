@@ -1,0 +1,37 @@
+VanService Complete System + Native Driver App
+
+CONTENTS OF THE ZIP
+- van_service_laravel: complete Laravel/XAMPP web system
+- vanservice-driver-native: standalone native Kotlin Android driver app source
+- VanService_Driver_Trip_Ticket.apk: latest installable Android APK
+
+LARAVEL INSTALLATION
+1. Extract the ZIP using Windows Extract All.
+2. Copy the folder named van_service_laravel into C:\\xampp\\htdocs\\
+3. The artisan file must be exactly here:
+   C:\\xampp\\htdocs\\van_service_laravel\\artisan
+4. In Command Prompt run:
+   cd /d C:\\xampp\\htdocs\\van_service_laravel
+   dir artisan
+   C:\\xampp\\php\\php.exe artisan key:generate
+   C:\\xampp\\php\\php.exe artisan optimize:clear
+5. Start Apache and MySQL in XAMPP.
+6. For a fresh database only:
+   C:\\xampp\\php\\php.exe artisan migrate --seed
+7. Start Laravel:
+   C:\\xampp\\php\\php.exe artisan serve --host=0.0.0.0 --port=8000
+8. Open http://localhost:8000
+
+If dir artisan says File Not Found, you are in the wrong folder. Search with:
+   dir /s /b C:\\xampp\\htdocs\\artisan
+Then cd to the folder printed by that command.
+
+ANDROID APP
+- The APK is in the ZIP root. Copy it to the Android phone/tablet and install it.
+- The app is native Kotlin and does not use Expo or Metro.
+- For Android Studio source, open the vanservice-driver-native folder.
+- The app requires the Laravel system and driver tablet/phone to use the same Wi-Fi.
+
+SECURITY
+- No .env file or passwords are included.
+- Configure the Laravel .env file for your own MySQL database.

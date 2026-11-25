@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#153E75</color>
+    <color name="action_blue">#2563EB</color>
+    <color name="live_green">#15803D</color>
+    <color name="warning_amber">#B45309</color>
+    <color name="error_red">#B91C1C</color>
+    <color name="alert_red">#B91C1C</color>
+    <color name="page_gray">#F5F7FB</color>
+    <color name="ink">#182230</color>
+    <color name="quiet_text">#5E6B7B</color>
+    <color name="line">#D7DFEA</color>
+    <color name="white">#FFFFFF</color>
+</resources>

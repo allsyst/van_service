@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Local XAMPP development commonly uses HTTP. Set an HTTPS LARAVEL_URL
+         before creating a production release. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

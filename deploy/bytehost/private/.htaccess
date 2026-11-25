@@ -1,0 +1,8 @@
+# Defense in depth: the parent htdocs/.htaccess also blocks this directory.
+# Keep this file inside _vanservice after FTP upload.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Deny from all
+</IfModule>
